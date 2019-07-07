@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -11,8 +13,8 @@
 
   <groupId>com.io7m.testartifact</groupId>
   <artifactId>com.io7m.testartifact</artifactId>
-  <version>0.0.1</version>
-  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>com.io7m.testartifact</name>
   <description>Testing artifact</description>
@@ -21,6 +23,10 @@
   <properties>
     <io7m.api.previousVersion>0.0.1</io7m.api.previousVersion>
   </properties>
+
+  <modules>
+    <module>com.io7m.testartifact.alpha</module>
+  </modules>
 
   <licenses>
     <license>
@@ -65,5 +71,15 @@
     <system>Travis CI</system>
     <url>https://travis-ci.org/io7m/testartifact</url>
   </ciManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.5</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>
