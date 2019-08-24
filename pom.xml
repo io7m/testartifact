@@ -22,6 +22,7 @@
 
   <properties>
     <io7m.api.previousVersion>0.0.1</io7m.api.previousVersion>
+    <io7m.java.requiredSDKBuildVersion>[11,13)</io7m.java.requiredSDKBuildVersion>
   </properties>
 
   <modules>
