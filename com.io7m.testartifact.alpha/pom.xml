@@ -8,7 +8,7 @@
   <parent>
     <artifactId>com.io7m.testartifact</artifactId>
     <groupId>com.io7m.testartifact</groupId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
   </parent>
 
   <artifactId>com.io7m.testartifact.alpha</artifactId>
@@ -24,13 +24,5 @@
       <artifactId>commons-io</artifactId>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
 </project>
